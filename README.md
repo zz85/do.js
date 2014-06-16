@@ -40,7 +40,7 @@ One difference between your usual way you handle
 
 ```
 element.addEventListener('bla', function(something) {});
-vs
+// vs
 element.onBla.on(function(something) {});
 ```
 
@@ -73,10 +73,14 @@ cat.says('Meow!');
 
 Node
 ====
-Do supports node.js.
+Do supports node.js/npm.
 
 ```
-var Do = require('./do.js');
+$ npm install do.js
+```
+
+```
+var Do = require('do.js');
 
 var onFire = new Do();
 onFire.do(something)
@@ -86,7 +90,7 @@ onFire.fire('bla');
 
 Tests
 =====
-Not yet. You make a [pull request](https://github.com/zz85/do.js/pulls).
+Not yet. You may make a [pull request](https://github.com/zz85/do.js/pulls).
 
 Contact
 =====
