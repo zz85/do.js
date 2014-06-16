@@ -1,0 +1,25 @@
+<html>
+<body>
+Open your developer tools / console.
+<script src="../do.js"></script>
+<script>
+function Cat() {
+	this.name = 'cat';
+	this.onSay = new Do(this); // Create an event listener type
+}
+
+Cat.prototype.says = function(something) {
+	console.log('Cat says ' + something);
+	this.onSay.fire(something); // Notifies listeners of something
+};
+
+var cat = new Cat();
+
+cat.onSay.do(function(something) {  // Adds listener
+	console.log('I hear ' + this.name + ' say ' + something);
+});
+
+cat.says('Meow!');
+</script>
+</body>
+</html>
