@@ -36,6 +36,14 @@ That's how I wrote this (in probably less than 5 minutes) just because I needed 
 
 Do.js can be pronounced as doh-dot-j-s, or do-dot-j-s. Doh like in play dough, do-ra-me, doraemon, [domo](http://domo-js.com/). Do like in "do this", "I do", or a do-while loop. (My original name for this class would be "ondo", but nvm it..)
 
+One difference between your usual way you handle 
+
+```
+element.addEventListener('bla', function(something) {});
+vs
+element.onBla.on(function(something) {});
+```
+
 Of course, this library may not be of production quality or fitting your usual/preferred event dispatching style, in that case feel free to try out [eventdispatcher.js](https://github.com/mrdoob/eventdispatcher.js/) or many other libraries out there.
 
 This event handling approach is however nothing new, and my idea's inception probably started with Robert Penner's (the guy who also brought us easing/tweening equations) related work with [Signals in as3](https://github.com/robertpenner/as3-signals). You may also like to check out [this page](http://millermedeiros.github.io/js-signals/) which includes a good comparison of [different observer pattern implementations](https://github.com/millermedeiros/js-signals/wiki/Comparison-between-different-Observer-Pattern-implementations).
@@ -63,13 +71,27 @@ cat.onSay.do(function(something) {  // Adds listener
 cat.says('Meow!');
 ```
 
+Node
+====
+Do supports node.js.
+
+```
+var Do = require('./do.js');
+
+var onFire = new Do();
+onFire.do(something)
+
+onFire.fire('bla');
+```
+
 Tests
 =====
 Not yet. You make a [pull request](https://github.com/zz85/do.js/pulls).
 
 Contact
 =====
-Twitter: [@blurspline](http://twitter.com/blurspline)
+For improvements, suggestions, you may use [github issues](https://github.com/zz85/do.js/issues).
+You may also subscribe to my Twitter: [@blurspline](http://twitter.com/blurspline)
 
 License
 =====

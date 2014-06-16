@@ -12,3 +12,5 @@ function Do(parent) {
 		}
 	};
 }
+
+if (typeof(module) === 'object') module.exports = Do;

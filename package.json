@@ -1,0 +1,32 @@
+{
+  "name": "do.js",
+  "version": "1.0.0",
+  "description": "Minimalistic Event Dispatcher",
+  "main": "do.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zz85/do.js.git"
+  },
+  "keywords": [
+    "simple",
+    "minimalistic",
+    "event",
+    "messaging",
+    "system",
+    "dispatcher",
+    "pubsub",
+    "js"
+  ],
+  "author": "Joshua Koo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zz85/do.js/issues"
+  },
+  "homepage": "https://github.com/zz85/do.js"
+}
